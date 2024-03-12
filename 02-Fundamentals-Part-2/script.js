@@ -220,9 +220,9 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
-*/
 
-// Objects
+
+*/ // Objects
 
 const tony = {
 	firstName: "Tony",
@@ -234,5 +234,35 @@ const tony = {
 
 console.log(tony);
 
+// dot vs bracket notation
+
 console.log(tony.lastName);
-console.log(tony.lastName);
+console.log(tony["lastName"]);
+
+const nameKey = "Name";
+
+console.log(tony["first + nameKey"]);
+console.log(tony["last" + nameKey]);
+
+//console.log(tony.lastName);
+
+const interestedIn = prompt(
+	"What do you want to know about Tony? Choose between firstName, lastName, age, job, and friends",
+);
+
+if (tony[interestedIn]) {
+	console.log(tony[interestedIn]);
+} else {
+	console.log("Wrong request! Choose between firstName, lastName, age, job, and friends");
+}
+
+tony.location = "Portugal";
+tony["twitter"] = "@tonycavasos";
+console.log(tony);
+
+// Challenge
+// "Jonas has 3 friends, and his best friend is called Brody"
+
+console.log(
+	`${tony.firstName} has ${tony.friends.length}, and his best friend is called ${tony.friends[0]} `,
+);
