@@ -1,0 +1,16 @@
+body {
+	background-color: rgb(12, 12, 12);
+}
+div {
+	margin-top: 13rem;
+}
+.container {
+	text-align: center;
+	font-size: 35px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+		Arial, sans-serif;
+}
+
+.h1-text {
+	color: coral;
+}
